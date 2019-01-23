@@ -11,3 +11,10 @@ spring:
           #password: pass
           search-paths:
             - 'station*'#In our config server we have sub folders named station1, station2,we will got all of them with the *
+          repos:
+            perf:
+              pattern:
+                - "*/perf" #now if I search anything that ends with perf it will respond the secondary repository/configutation for example http://localhost:8888/s1rates/perf
+              uri: https://github.com/pepeArenas/spring-cloudconfig-wa-tolls-perf.git
+              search-paths:
+                - 'station*'#In our config server we have sub folders named station1, station2,we will got all of them with the *
