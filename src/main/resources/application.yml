@@ -9,3 +9,5 @@ spring:
           uri: https://github.com/pepeArenas/spring-cloudconfig-wa-tolls.git
           #username: user
           #password: pass
+          search-paths:
+            - 'station*'#In our config server we have sub folders named station1, station2,we will got all of them with the *
